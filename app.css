@@ -1,0 +1,132 @@
+body {
+    background-color: lightgray;
+}
+h1 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    vertical-align: 40px;
+    font-size: 300%;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+#main_icon {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    border: 3px solid black;
+    width: 400px;
+    height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+
+.panel {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.membership_option {
+    font-family: 'Cormorant Garamond', serif;
+    border: 3px solid black;
+    background-color: lightblue;
+    text-align: center;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 555px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+.membership_option img {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+}
+
+.membership_option H2{
+    font-size: 300%;
+    width: 550px;
+    height: 10px;
+    padding-bottom: 10px;
+}
+
+.membership_option li{
+    width: 400px;
+    border-top: 1px solid #EFF1F3;
+    position: relative;
+    left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.price {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 200%;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: #E5E6E4;
+    /*#C6AC8F*/
+    color: black;
+    transition: all 0.5s;
+
+
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0.5em 0.5em -0.4em #424874;
+    transform: translateY(-0.25em);
+    border-color: darkblue;
+}
+
+@media (min-width: 600px) {
+    .panel{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .membership_option{
+        width: 400px;
+        height: 550px;
+    }
+    .membership_option h2 {
+        width: 400px;
+        text-align: center;
+    }
+    .membership_option li {
+        width: 250px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .panel{
+        flex-direction: column;
+    }
+}
